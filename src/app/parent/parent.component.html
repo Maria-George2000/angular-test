@@ -1,0 +1,6 @@
+<form [formGroup] = "users" (ngSubmit)="submit()">
+<input  formControlName="name" placeholder="Enter your name" />  
+<input  formControlName="email" placeholder="Enter your email" />  
+<button type="submit" > Submit</button>
+<app-child [data] = "formValue" > </app-child>
+</form>
